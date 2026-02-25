@@ -1,0 +1,19 @@
+							SQL COMMANDS
+
+create database emp;
+USE emp; 
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);	
+
+	CREATE TABLE expenses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    expense_date VARCHAR(50),
+    category VARCHAR(100),
+    description VARCHAR(200),
+    amount DOUBLE
+);
